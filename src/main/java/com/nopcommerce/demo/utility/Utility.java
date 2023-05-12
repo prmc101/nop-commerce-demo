@@ -1,16 +1,15 @@
 package com.nopcommerce.demo.utility;
 
-import com.google.common.base.Function;
+
 import com.nopcommerce.demo.drivermanager.ManageDriver;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.support.ui.*;
+import org.openqa.selenium.support.ui.Select;
 
 import java.io.File;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
-import java.time.Duration;
 import java.util.Date;
 import java.util.List;
 
@@ -251,7 +250,7 @@ public class Utility extends ManageDriver {
     /**
      * This method will use to wait until  VisibilityOfElementLocated
      */
-    public WebElement waitUntilVisibilityOfElementLocated(By by, int time) {
+    /*public Object waitUntilVisibilityOfElementLocated(By by, int time) {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(time));
         return wait.until(ExpectedConditions.visibilityOfElementLocated(by));
     }
@@ -268,8 +267,7 @@ public class Utility extends ManageDriver {
             }
         });
         return element;
-    }
-
+    }*/
 //***************************** Is Display Methods **********************************************//
     /**
      * This method will verify that element is displayed
